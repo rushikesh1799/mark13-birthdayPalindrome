@@ -255,7 +255,7 @@ function clickHandler(params) {
         var [ctr, nextDate] = getNextPalindromeDate(date)
         console.log(ctr);
         console.log(nextDate);
-        resultRef.innerText = `The next Palindrome Date is ${nextDate.day}/${nextDate.month}/${nextDate.year} and you missed by ${ctr} days 😕`
+        resultRef.innerText = `Oops! Your birthday is not a palindrome. The next Palindrome Date is ${nextDate.day}/${nextDate.month}/${nextDate.year} and you missed by ${ctr} days 😕`
     }
 
 }
