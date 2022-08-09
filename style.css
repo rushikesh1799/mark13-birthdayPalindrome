@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #f3dec9;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    text-align: center;
+    margin: 3rem;
+}
+
+h2 {
+    font-size: xx-large;
+    margin: 2rem;
+    color: #ff5200;
+}
+
+#bday-txt {
+    font-size: large;
+    font-weight: 600;
+}
+
+#bday-input {
+    font-size: 14px;
+    outline: #fff;
+    padding: 0.6rem 1rem;
+    margin: 1rem;
+    border: 2px solid #ff5200;
+    border-radius: 0.5rem;
+    width: 100%;
+    max-width: 256px;
+    background-color: #00546c;
+    color: #FFFFFF;
+}
+
+#show-btn {
+    background: #ff5200;
+    border: none;
+    color: #fff;
+    padding: 0.7rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 15px;
+    cursor: pointer;
+    outline: #fff;
+    margin: auto;
+    margin-top: 1.5rem;
+
+    display: block;
+}
+
+#output {
+    color: #00546c;
+    font-size: x-large;
+    margin: 2rem 0;
+    font-weight: 700;
+}
+
+#bday-txt {
+    color: black;
+}
+
+@media screen and (max-width: 600px) {
+    html{
+        font-size: 55%;
+    }
+
+    #bday-txt {
+        display: block;
+        font-size: large;
+        font-weight: 600;
+    }
+}
