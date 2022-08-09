@@ -32,7 +32,7 @@ h2 {
     border: 2px solid #ff5200;
     border-radius: 0.5rem;
     width: 100%;
-    max-width: 256px;
+    max-width: 400px;
     background-color: #00546c;
     color: #FFFFFF;
 }
@@ -72,5 +72,9 @@ h2 {
         display: block;
         font-size: large;
         font-weight: 600;
+    }
+
+    #bday-input{
+        width: 80%;
     }
 }
