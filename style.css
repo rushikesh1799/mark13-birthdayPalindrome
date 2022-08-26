@@ -6,10 +6,11 @@
     box-sizing: border-box;
     background-color: #f3dec9;
     font-family: 'Poppins', sans-serif;
+    text-align: center;
 }
 
 main {
-    text-align: center;
+    min-height: 60vh;
     margin: 3rem;
 }
 
@@ -52,6 +53,12 @@ h2 {
     display: block;
 }
 
+#show-btn:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid #FFFFFF;
+}
+
 #output {
     color: #00546c;
     font-size: x-large;
@@ -61,6 +68,25 @@ h2 {
 
 #bday-txt {
     color: black;
+}
+
+.footer-text {
+    margin: 1rem;
+}
+
+.footer-text a {
+    text-decoration: none;
+    /* background-color: #00546c; */
+    padding: 3px;
+    border-radius: 5px;
+    border: 2px solid #ff5200;
+    color: #00546c;
+}
+
+.footer-text a:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid #FFFFFF;
 }
 
 @media screen and (max-width: 600px) {
