@@ -252,10 +252,13 @@ function clickHandler(params) {
     if (isPlaindrome) {
         resultRef.innerText = 'Yayy! Your Birthdate is Palindrome 🥳'
     } else {
-        var [ctr, nextDate] = getNextPalindromeDate(date)
-        console.log(ctr);
-        console.log(nextDate);
-        resultRef.innerText = `Oops! Your birthday is not a palindrome. The next Palindrome Date is ${nextDate.day}/${nextDate.month}/${nextDate.year} and you missed by ${ctr} days 😕`
+        var [nextDayCount, nextDate] = getNextPalindromeDate(date)
+        var [prevDayCount, prevDate] = getPreviousPalindromeDate(date)
+        // console.log(nextDayCount);
+        // console.log(nextDate);
+        // console.log(prevDayCount);
+        // console.log(prevDate);
+        resultRef.innerText = `Oops! Your Birthday is not a palindrome. The next Palindrome Date is ${nextDate.day}/${nextDate.month}/${nextDate.year} and you missed it by ${nextDayCount} days AND the previous Palindrome Date is ${prevDate.day}/${prevDate.month}/${prevDate.year} and you missed it by ${prevDayCount} days 😕`
     }
 
 }
