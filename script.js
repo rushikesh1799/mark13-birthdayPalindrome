@@ -237,7 +237,10 @@ var resultRef = document.getElementById('output');
 function clickHandler(params) {
     var bdayStr = dateInputRef.value;
 
-    if (bdayStr !== "") {
+    if (bdayStr == "") {
+        resultRef.innerText = "Please enter you Birthday Date above☝️"
+    }
+    else if (bdayStr !== "") {
         var listofDate = bdayStr.split('-');
         var date = {
             day: Number(listofDate[2]),
